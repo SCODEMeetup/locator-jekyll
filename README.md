@@ -10,6 +10,7 @@ What follows are a collection of lessons learned from the SCODE teams and their 
 ---
 ## Data Analysis Team
 - Jesse's comments
+![Image of Entity Relationship Diagram](https://www.lucidchart.com/invitations/accept/3bd4b964-1840-4ab0-86c7-12541ea5362c)
 
 ## Application Program Interface Team
 - Vijay's comments
