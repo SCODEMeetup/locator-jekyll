@@ -10,7 +10,7 @@ What follows are a collection of lessons learned from the SCODE teams and their 
 ---
 ## Data Analysis Team
 ### Entity Relationship Diagram
-The initial analysis started with looking at the files listed on the Open Design Challenge and understanding how they related to one another. The four comma-separated values(CSV) files are part of the [Food Pantry and User Data](https://ckan.smartcolumbusos.com/dataset/food-pantry-and-user-data) dataset on the SCOS. That dataset is provided by [HandsOn Central Ohio](https://handsoncentralohio.org/), and is comprised of 34 CSVs in total. The files used in the analysis all have an ACTIVE_FLAG (Y/N) field, and we are only displaying active records in our visualizations.
+The initial analysis started with looking at the files listed on the Open Design Challenge and understanding how they related to one another. The 4 comma-separated values(CSV) files are part of the [Food Pantry and User Data](https://ckan.smartcolumbusos.com/dataset/food-pantry-and-user-data) dataset on the SCOS. That dataset is provided by [HandsOn Central Ohio](https://handsoncentralohio.org/), and is comprised of 34 CSVs in total. The files used in the analysis all have an ACTIVE_FLAG (Y/N) field, we are only displaying active records in our visualizations.
 
 | Listed            | Actual            |
 |:-:                |:-:                |
@@ -20,6 +20,8 @@ The initial analysis started with looking at the files listed on the Open Design
 | Service Location  |                   |
 | Service Taxonomy  | Service Taxonomy  |
 | Taxonomy          | Taxonomy          |
+
+The Agency file links all the other files together, it is where the AGENCY_ID primary key (PK) resides. The Service Location file contains contact information and has a foreign key (FK) reference to Agency Location. Agency Location lists the physical address of said agency. The Agency Service file describes the services the agency offers. The Service Taxonomy file has a composite key that lets the Agency Service and Taxonomy files uniquely identify a record. Lastly, the Taxonomy file provides TAXON_ID (PK) and TAXONOMY LEVEL. 
 
 ![Image of Entity Relationship Diagram](/img/EntityRelationshipDiagram.PNG)
 
