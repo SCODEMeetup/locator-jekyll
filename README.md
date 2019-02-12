@@ -9,7 +9,9 @@ What follows are a collection of lessons learned from the SCODE teams and their 
 
 ---
 ## Data Analysis Team
-- Jesse's comments
+### Entity Relationship Diagram
+The initial analysis started with looking at the files listed on the Open Design Challenge and understanding how they related to one another.
+
 ![Image of Entity Relationship Diagram](/img/EntityRelationshipDiagram.PNG)
 
 ## Application Program Interface Team
