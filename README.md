@@ -10,7 +10,17 @@ What follows are a collection of lessons learned from the SCODE teams and their 
 ---
 ## Data Analysis Team
 ### Entity Relationship Diagram
-The initial analysis started with looking at the files listed on the Open Design Challenge and understanding how they related to one another. The four comma-separated values(CSV) files are part of the [Food Pantry and User Data](https://ckan.smartcolumbusos.com/dataset/food-pantry-and-user-data) dataset on the SCOS. That dataset is provided by [HandsOn Central Ohio](https://handsoncentralohio.org/).
+The initial analysis started with looking at the files listed on the Open Design Challenge and understanding how they related to one another. The four comma-separated values(CSV) files are part of the [Food Pantry and User Data](https://ckan.smartcolumbusos.com/dataset/food-pantry-and-user-data) dataset on the SCOS. That dataset is provided by [HandsOn Central Ohio](https://handsoncentralohio.org/), and is comprised of 34 CSVs in total. The files used in the analysis all have an ACTIVE_FLAG (Y/N) field, and we are only displaying active records in our visualizations.
+
+| Listed            | Actual            |
+|:-:                |:-:                |
+| Agency            | Agency            |
+|                   | Agency Location   |
+|                   | Agency Service    |
+| Service Location  |                   |
+| Service Taxonomy  | Service Taxonomy  |
+| Taxonomy          | Taxonomy          |
+
 ![Image of Entity Relationship Diagram](/img/EntityRelationshipDiagram.PNG)
 
 ---
