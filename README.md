@@ -25,6 +25,13 @@ The Agency file links all the other files together, it is where the AGENCY_ID pr
 
 ![Image of Entity Relationship Diagram](/img/EntityRelationshipDiagram.PNG)
 
+The diagram can be read as follows:
+1. An Agency (can) have "zero, one, or many" location(s).
+2. An Agency (can) provide "one or many" service(s).
+3. A Agency Service (can) have "one or many" taxonomies.
+
+- [Jesse Mathews](https://www.linkedin.com/in/jesse-mathews-20662450/)
+
 ---
 ## Application Program Interface Team
 - Vijay's comments
