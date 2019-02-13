@@ -37,7 +37,7 @@ The diagram can be read as follows:
 ## Application Program Interface Team
 - Vijay's comments
 - Mihir's comments
-- Eddie's comments
+- Eddie's comments - The REST API was created using Node JS and Express JS, and the endpoints were separated by resource type (service category/taxonomy, agency information, location information). All of the endpoints either return a single instance (specified by primary/foreign keys) or a list of objects, with specific query parameters and paging available. The service categories can be queried in a hierarchy using the `/children` endpoint, which returns any categories that are a subcategory of the specified ID. Any breaking changes to the API were introduced in a new version, with v1 being the raw data from the source and v2 being a prettified and slimmed down version of the data. The API is documented via swagger at `/api-docs`.  All endpoints are tested individually using Chai and Mocha (Javascript testing libraries). Future improvements to the API could include the addition of a GraphQL API to better model the data needed between the entities, and addition of other data sets provided by MOFB. Tools: [NodeJs](https://nodejs.org/en/), [ExpressJS](https://expressjs.com/), [ChaiJS](https://www.chaijs.com/), [MochaJS](https://mochajs.org/), [Swagger](https://swagger.io/). Data set: [MOFB Data](https://ckan.smartcolumbusos.com/dataset/food-pantry-and-user-data). Source code: [Github](https://github.com/SCODEMeetup/mofb-api). Api Documentation: [Swagger](https://mofb-api.appspot.com/api-docs/).
 
 ---
 ## User Interface Team
