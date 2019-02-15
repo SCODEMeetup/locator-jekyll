@@ -22,7 +22,7 @@ The initial analysis started with looking at the files listed on the Open Design
 | Service Taxonomy  | Service Taxonomy  |
 | Taxonomy          | Taxonomy          |
 
-The Agency file links all the other files together, it is where the AGENCY_ID primary key (PK) resides. The Service Location file contains contact information and has a foreign key (FK) reference to Agency Location. Agency Location lists the physical address of said agency. The Agency Service file describes the services the agency offers. The Service Taxonomy file has a composite key that lets the Agency Service and Taxonomy files uniquely identify a record. Lastly, the Taxonomy file provides TAXON_ID (PK) and TAXONOMY LEVEL. 
+The **Agency** file uses name, ID number and other values to tell you about a specific agency. The **Service Location** file contains contact information (phone numbers, hours, email address, website, etc...) but did not contain an agency's physical address. That information was found in the **Agency Location** file. The **Agency Service** file describes the services an agency offers. 
 
 ![Image of Entity Relationship Diagram](/img/EntityRelationshipDiagram.PNG)
 
@@ -30,6 +30,8 @@ The diagram can be read as follows:
 1. An agency (can) have "zero, one, or many" location(s).
 2. An agency (can) provide "one or many" service(s).
 3. An agency service (can) have "one or many" taxonomies.
+
+### Taxonomy Hierarchy
 
 - [Jesse Mathews](https://www.linkedin.com/in/jesse-mathews-20662450/)
 
