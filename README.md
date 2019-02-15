@@ -42,4 +42,10 @@ The diagram can be read as follows:
 ---
 ## User Interface Team
 - Mihir's comments
-- Adam's comments
+- Adam's comments: One approach to visualizing these locations on a map is to use React and Mapbox to manage the data as a Vector Tileset. In order for a dataset to be converted to a Vector Tileset, it needs values for Longitude and Latitude, and since the initial dataset do not have these values, they can be run through a Jupyter Notebook in order to produce these values. From there, Mapbox provides a free tool to upload that data, and convert it into a Vector Tileset. Vector Tilesets are built to work with more front-end mapping frameworks, and reduce work needed to render the data into a map. From this point, a relatively minimal React frontend is used to populate the data on the map. A benefit of this approach is that a query made on the front end can search through the data for these points without the need to talk to the OS since that data is included in the Vector Tileset, although that component of the UI hasn't been implemented yet.
+
+  - Data: Food Bank [Agency Locations](https://ckan.smartcolumbusos.com/dataset/b0390b58-35c9-45e8-8a2d-d2472b20d65f/resource/570a8e02-fb0e-4cee-895b-3b32bd740650/download/agency_location.csv)
+  - Dataset uploaded through [jupyter notebook](https://jupyter.smartcolumbusos.com/user/ohioadam/lab/tree/Geocoder-to-CSV.ipynb) to geocode data, and saved as new csv
+  - New csv uploaded to Mapbox as tileset (Map ID: mapbox://smrtcbus.9n1znhht)
+
+![Map](img/Locations.png)
