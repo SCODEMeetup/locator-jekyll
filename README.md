@@ -50,7 +50,7 @@ Any breaking changes to the API were introduced in a new version, with v1 being 
 3. Source code: [Github](https://github.com/SCODEMeetup/mofb-api).
 4. API Documentation: [Swagger](https://mofb-api.appspot.com/api-docs/).
 
-- Eddie
+- [Eddie Legg](https://www.linkedin.com/in/delbert-eddie-legg-5ba6a583/)
 
 ---
 ## User Interface Team
