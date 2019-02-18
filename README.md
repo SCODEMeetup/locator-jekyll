@@ -37,9 +37,6 @@ The diagram can be read as follows:
 
 ---
 ## Application Program Interface Team
-- Vijay's comments
-- Mihir's comments
-
 ### REST API
 The REST API was created using Node JS and Express JS, and the endpoints were separated by resource type (service category/taxonomy, agency information, location information). All of the endpoints either return a single instance (specified by primary/foreign keys) or a list of objects, with specific query parameters and paging available. The service categories can be queried in a hierarchy using the `/children` endpoint, which returns any categories that are a subcategory of the specified ID.
 
@@ -54,7 +51,12 @@ Any breaking changes to the API were introduced in a new version, with v1 being 
 
 ---
 ## User Interface Team
-- Mihir's comments
+### PWA using Reactjs, Redux with Google maps
+The Community Service locator UI is a progressive web app that creates an interactive map, displaying locations of active service providers where users could navigate the map by location, service provider, and service offerings. It uses Reactjs library and its ecosystem.
+1. React Ecosystem: [Reactjs](https://reactjs.org/), [Redux](https://redux.js.org/), [react-google-maps](https://tomchentw.github.io/react-google-maps/), 
+2. Testing: [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/)
+3. Data set : Rest calls to API project
+4. Source Code: [Github](https://github.com/SCODEMeetup/community-services-locator-ui)
 
 ### Mapbox
 One approach to visualizing these locations on a map is to use React and Mapbox to manage the data as a Vector Tileset. In order for a dataset to be converted to a Vector Tileset, it needs values for Longitude and Latitude, and since the initial dataset did not have these values, they can be run through a Jupyter Notebook in order to produce these values.
