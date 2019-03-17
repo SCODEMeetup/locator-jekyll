@@ -31,8 +31,21 @@ The diagram can be read as follows:
 2. An agency (can) provide "one or many" service(s).
 3. An agency service (can) have "one or many" taxonomies.
 
-### Taxonomy Hierarchy
-
+### Taxonomy Hierarchy?
+The taxonomy file has five different physical levels. Each record in the file has a unique TAXON_ID value. That value relates parent
+and child records from one level to the next. While the records are logically related, the data structure is not a hierarchy. Each 
+record is an individual endpoint. An agency may offer a level 5 service without offering services at levels 1-4.
+```bash
+├── BASIC_NEEDS
+│   ├── FOOD
+│   │   ├── EMERGENCY_FOOD
+│   │   │   ├── FOOD_PANTRIES
+├── EDUCATION
+│   ├── EDUCATIONAL_PROGRAMS
+├── HEALTHCARE
+│   ├── SPECIALITY_MEDICINE
+│   │   ├── PEDIATRICS
+```
 - [Jesse Mathews](https://www.linkedin.com/in/jesse-mathews-20662450/)
 
 ---
@@ -58,6 +71,9 @@ The Community Service locator UI is a progressive web app that creates an intera
 3. Data set : Rest calls to API project
 4. Source Code: [Github](https://github.com/SCODEMeetup/community-services-locator-ui)
 
+- [Vijay Yadav](https://www.linkedin.com/in/vejay/) &  [Mihir Amin](https://www.linkedin.com/in/mihir-amin-46910540/)
+
+---
 ### Mapbox
 One approach to visualizing these locations on a map is to use React and Mapbox to manage the data as a Vector Tileset. In order for a dataset to be converted to a Vector Tileset, it needs values for Longitude and Latitude, and since the initial dataset did not have these values, they can be run through a Jupyter Notebook in order to produce these values.
 
@@ -69,4 +85,4 @@ From there, Mapbox provides a free tool to upload that data, and convert it into
 
 ![Map](img/Locations.png)
 
-- Adam
+- [Adam Sauer](https://www.linkedin.com/in/adam-sauer-5167a640/)
