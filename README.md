@@ -71,7 +71,7 @@ The Community Service locator UI is a progressive web app that creates an intera
 3. Data set : Rest calls to API project
 4. Source Code: [Github](https://github.com/SCODEMeetup/community-services-locator-ui)
 
-- [Vijay Yadav](https://www.linkedin.com/in/vejay/) &  [Mihir Amin](https://www.linkedin.com/in/mihir-amin-46910540/)
+- [Mihir Amin](https://www.linkedin.com/in/mihir-amin-46910540/), [Melissa Boyer](https://www.linkedin.com/in/melissa3000/), [Vijay Yadav](https://www.linkedin.com/in/vejay/)
 
 ---
 ### Mapbox
